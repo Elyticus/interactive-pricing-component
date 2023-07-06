@@ -1,0 +1,276 @@
+:root {
+  /* Google Font */
+  --Manrope: "Manrope", sans-serif;
+}
+
+/* Mobile Style Version */
+body {
+  font-family: var(--Manrope);
+
+  background-image: url(images/bg-pattern.svg);
+  background-repeat: no-repeat;
+
+  text-align: center;
+}
+
+header {
+  background: url(images/pattern-circles.svg) no-repeat center;
+
+  padding: 2rem;
+  margin: 40px 0 -5px;
+}
+
+main {
+  width: 327px;
+  height: 478px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+
+  margin: 0 auto;
+}
+
+h1 {
+  color: #293356;
+  font-size: 20px;
+  font-family: var(--Manrope);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.header_flex {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.header_flex p {
+  width: 175px;
+}
+
+.price_flex {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.range_flex_reverse {
+  display: flex;
+  flex-direction: column;
+}
+
+.range_price {
+  width: 279px;
+  height: 8px;
+
+  margin: 20px auto;
+
+  border-radius: 5px;
+  background: #ecf0fb;
+}
+
+.sign-up-info {
+  color: #848ead;
+  text-align: center;
+  font-size: 13px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.info_price {
+  padding-top: 35px;
+}
+
+.info_plan {
+  color: #848ead;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+
+  margin: 20px auto;
+}
+
+.price {
+  color: #293356;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin-right: 8px;
+}
+
+.price_flex p {
+  color: #848ead;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_style {
+  color: #848ead;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.714px;
+  text-transform: uppercase;
+}
+
+.web_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.web_info p {
+  margin: 7px;
+}
+
+.check_mark {
+  width: 6.949px;
+  height: 5.042px;
+}
+
+.discount_info {
+  border-radius: 9.5px;
+  background: #feede8;
+  color: #ff8d68;
+  font-size: 10px;
+  font-weight: 800;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 7px;
+}
+
+.discount {
+  display: none;
+}
+
+footer {
+  border-top: 1px solid #ecf0fb;
+
+  color: #848ead;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+
+  padding-top: 25px;
+}
+
+button {
+  width: 170px;
+  height: 41px;
+
+  border-radius: 20.5px;
+  background: #293356;
+
+  border: none;
+  color: #becdff;
+
+  margin-top: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 3.6px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    background-size: 100% 67%;
+  }
+
+  main {
+    width: 540px;
+    height: 397px;
+  }
+
+  .web_info {
+    display: flex;
+    justify-content: left;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .discount {
+    display: block;
+  }
+
+  .range_price {
+    width: 444px;
+    height: 8px;
+  }
+
+  .range_flex_reverse {
+    display: flex;
+    flex-direction: column;
+  }
+}
