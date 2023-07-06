@@ -16,8 +16,8 @@ body {
 header {
   background: url(images/pattern-circles.svg) no-repeat center;
 
-  padding: 2rem;
-  margin: 40px 0 -5px;
+  padding: 1rem;
+  margin: 20px 0 -5px;
 }
 
 main {
