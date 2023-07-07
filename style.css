@@ -60,7 +60,44 @@ h1 {
   margin: 20px auto;
 
   border-radius: 5px;
-  background: #ecf0fb;
+
+  background: linear-gradient(
+    90deg,
+    rgb(165, 243, 235) 25%,
+    rgb(234, 238, 251) 25%
+  );
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-thumb {
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px; /* Adjust the width */
+  height: 32px; /* Adjust the height */
+  background-color: #7aeadf;
+  border-radius: 50%;
+
+  box-shadow: 2px 8px 10px #80fff3;
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  background-color: #24aea1;
+}
+
+.range_price:hover {
+  cursor: grab;
+}
+.range_price:active {
+  cursor: grabbing;
+  background-color: #24aea1;
 }
 
 .sign-up-info {
@@ -83,7 +120,7 @@ h1 {
   margin: 20px auto;
 }
 
-.price {
+#price {
   color: #293356;
   font-size: 32px;
   font-weight: 800;
@@ -103,6 +140,9 @@ h1 {
 
 .main_header {
   padding-top: 40px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .web_info {
@@ -169,6 +209,14 @@ button:hover {
   transition: 0.1s ease-in;
 }
 
+.display_price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  order: 1;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -201,11 +249,11 @@ button:hover {
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+  background-color: #7aeadf;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #7aeadf;
 }
 
 input:checked + .slider:before {
@@ -257,5 +305,13 @@ input:checked + .slider:before {
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .display_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    order: 0;
   }
 }
