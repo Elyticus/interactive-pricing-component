@@ -68,11 +68,11 @@ h1 {
   );
 }
 
-input[type="range"]::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: none;
+input[type="range"] {
+  /* For Webkit-based browsers */
+  -webkit-appearance: none;
+  background-color: #09eb6f;
+  border-radius: 5px;
 }
 
 /* For Firefox */
@@ -84,11 +84,32 @@ input[type="range"]::-moz-range-thumb {
   height: 32px; /* Adjust the height */
   background-color: #7aeadf;
   border-radius: 50%;
+  border: none;
 
   box-shadow: 2px 8px 10px #80fff3;
 }
 
 input[type="range"]::-moz-range-thumb:active {
+  background-color: #24aea1;
+}
+
+/* For Google Chrome */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 32px; /* Adjust the width */
+  height: 32px; /* Adjust the height */
+  background-color: #7aeadf;
+  border-radius: 50%;
+
+  box-shadow: 2px 8px 10px #80fff3;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
   background-color: #24aea1;
 }
 
