@@ -47,17 +47,28 @@
     </header>
 
     <main>
-      <div class="info_price">
-        <div class="price_flex">
-          <div class="range_flex_reverse">
-            <p class="page_style">100k Pageviews</p>
+      <div class="main_header">
+        <p class="page_style">
+          <span id="page-views-count">100k </span>Pageviews
+        </p>
 
-            <p><span class="price">$16.00</span>/month</p>
+        <p><span id="price"></span>/month</p>
 
-            <label for="range2"></label>
-            <input class="range_price" id="range" type="range" />
-          </div>
-        </div>
+        <input
+          step="1"
+          min="1"
+          max="5"
+          class="range_price"
+          id="range"
+          type="range"
+          style="
+            background: linear-gradient(
+              90deg,
+              rgb(165, 243, 235) 25%,
+              rgb(234, 238, 251) 25%
+            );
+          "
+        />
       </div>
 
       <div class="info_plan">
@@ -90,7 +101,7 @@
           </div>
         </div>
 
-        <button>Start my trial</button>
+        <button id="btn">Start my trial</button>
       </footer>
     </main>
 

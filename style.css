@@ -53,18 +53,6 @@ h1 {
   width: 175px;
 }
 
-.price_flex {
-  display: flex;
-  flex-direction: column;
-
-  gap: 10px;
-}
-
-.range_flex_reverse {
-  display: flex;
-  flex-direction: column;
-}
-
 .range_price {
   width: 279px;
   height: 8px;
@@ -85,10 +73,6 @@ h1 {
   line-height: 23px;
 }
 
-.info_price {
-  padding-top: 35px;
-}
-
 .info_plan {
   color: #848ead;
   display: flex;
@@ -107,17 +91,6 @@ h1 {
   margin-right: 8px;
 }
 
-.price_flex p {
-  color: #848ead;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .page_style {
   color: #848ead;
   font-size: 12px;
@@ -126,6 +99,10 @@ h1 {
   line-height: normal;
   letter-spacing: 1.714px;
   text-transform: uppercase;
+}
+
+.main_header {
+  padding-top: 40px;
 }
 
 .web_info {
@@ -184,6 +161,12 @@ button {
   color: #becdff;
 
   margin-top: 20px;
+}
+
+button:hover {
+  color: white;
+  background: #2196f3;
+  transition: 0.1s ease-in;
 }
 
 .switch {
@@ -269,8 +252,10 @@ input:checked + .slider:before {
     height: 8px;
   }
 
-  .range_flex_reverse {
+  .main_header {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
   }
 }
