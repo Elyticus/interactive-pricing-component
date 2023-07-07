@@ -82,11 +82,15 @@ input[type="range"]::-moz-range-thumb {
   background-position: center;
   width: 32px; /* Adjust the width */
   height: 32px; /* Adjust the height */
-  background-color: #7aeadf;
+  background-color: #10d8c4;
   border-radius: 50%;
   border: none;
 
   box-shadow: 2px 8px 10px #80fff3;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background-color: #7aeadf;
 }
 
 input[type="range"]::-moz-range-thumb:active {
@@ -103,10 +107,14 @@ input[type="range"]::-webkit-slider-thumb {
 
   width: 32px; /* Adjust the width */
   height: 32px; /* Adjust the height */
-  background-color: #7aeadf;
+  background-color: #10d8c4;
   border-radius: 50%;
 
   box-shadow: 2px 8px 10px #80fff3;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #7aeadf;
 }
 
 input[type="range"]::-webkit-slider-thumb:active {
